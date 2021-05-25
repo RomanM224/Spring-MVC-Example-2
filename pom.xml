@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring_mvc2 Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -35,12 +35,22 @@
 			<artifactId>spring-context</artifactId>
 			<version>5.2.2.RELEASE</version>
 		</dependency>
-		
+
 	</dependencies>
-	
-	 <build>
+
+	<build>
 		<finalName>spring_mvc2</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
-	
+
 
 </project>
